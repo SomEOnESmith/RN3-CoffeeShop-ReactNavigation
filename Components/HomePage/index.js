@@ -1,24 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import { View } from "react-native";
 
 // NativeBase Components
-import { Container, Header } from "native-base";
+import { Container } from "native-base";
 
+//Navigation
+import AppContainer from "../../Navigations";
 // Style
 import styles from "./styles";
-
-// Components
-import CoffeeList from "../CoffeeList";
-import CoffeeCart from "../CoffeeCart";
-import CoffeeDetail from "../CoffeeDetail";
-import Login from "../Login";
 
 const HomePage = () => {
   return (
     <Container style={styles.transparent}>
       <View style={styles.overlay} />
-      <Header style={styles.transparent} />
-      <CoffeeDetail />
+      <AppContainer />
     </Container>
   );
 };
