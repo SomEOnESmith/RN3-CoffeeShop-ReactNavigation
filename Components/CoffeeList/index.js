@@ -40,4 +40,4 @@ CoffeeList.navigationOptions = ({ navigation }) => {
   };
 };
 
-export default observer(CoffeeList);
+export default CoffeeList;

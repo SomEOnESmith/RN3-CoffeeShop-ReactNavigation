@@ -10,7 +10,7 @@ import CartItem from "./CartItem";
 //Data
 import items from "../../data/items";
 
-const CoffeeCart = () => {
+const CoffeeCart = props => {
   let cartItems;
   if (items) {
     cartItems = items.map(item => <CartItem item={item} key={item.id} />);
@@ -19,7 +19,7 @@ const CoffeeCart = () => {
   return (
     <List>
       {cartItems}
-      <Button full danger>
+      <Button full danger onPress={() => props.navigation.navigate("OrderTab")}>
         <Text>Checkout</Text>
       </Button>
     </List>

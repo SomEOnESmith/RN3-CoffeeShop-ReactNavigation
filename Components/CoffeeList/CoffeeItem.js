@@ -12,7 +12,7 @@ const CoffeeItem = props => {
   const { cafe } = props;
   const { navigation } = props;
   const handlePress = () => {
-    navigation.navigate("DetailScreen", {
+    navigation.navigate("CoffeeDetail", {
       cafeID: cafe.id
     });
   };
